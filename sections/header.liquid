@@ -1,0 +1,957 @@
+{% schema %}
+{
+  "name": {
+    "da": "Galleri",
+    "de": "Galerie",
+    "en": "Gallery",
+    "es": "Galería",
+    "fi": "Galleria",
+    "fr": "Galerie",
+    "hi": "गैलरी",
+    "it": "Galleria",
+    "ja": "ギャラリー",
+    "ko": "갤러리",
+    "ms": "Galeri",
+    "nb": "Galleri",
+    "nl": "Galerie",
+    "pt-BR": "Galeria",
+    "pt-PT": "Galeria",
+    "sv": "Galleri",
+    "th": "แกลเลอรี",
+    "zh-CN": "图库",
+    "zh-TW": "圖庫"
+  },
+  "class": "index-section",
+  "max_blocks": 3,
+  "settings": [
+    {
+      "type": "select",
+      "id": "gallery_height",
+      "label": {
+        "da": "Højde for galleri",
+        "de": "Galeriehöhe",
+        "en": "Gallery height",
+        "es": "Altura de la galería",
+        "fi": "Gallerian korkeus",
+        "fr": "Hauteur de la galerie",
+        "hi": "गैलरी की ऊंचाई",
+        "it": "Altezza galleria",
+        "ja": "ギャラリーの高さ",
+        "ko": "갤러리 높이",
+        "ms": "Ketinggian galeri",
+        "nb": "Gallerihøyde",
+        "nl": "Hoogte galerij",
+        "pt-BR": "Altura da galeria",
+        "pt-PT": "Altura da galeria",
+        "sv": "Gallerihöjd",
+        "th": "ความสูงแกลเลอรี",
+        "zh-CN": "图库高度",
+        "zh-TW": "圖庫高度"
+      },
+      "default": "short",
+      "options": [
+        {
+          "value": "short",
+          "label": {
+            "da": "Lav",
+            "de": "Niedrig",
+            "en": "Short",
+            "es": "Baja",
+            "fi": "Matala",
+            "fr": "Court",
+            "hi": "छोटा",
+            "it": "Bassa",
+            "ja": "低い",
+            "ko": "짧음",
+            "ms": "Pendek",
+            "nb": "Lav",
+            "nl": "Kort",
+            "pt-BR": "Pequena",
+            "pt-PT": "Pequena",
+            "sv": "Kort",
+            "th": "ต่ำ",
+            "zh-CN": "矮",
+            "zh-TW": "較矮"
+          }
+        },
+        {
+          "value": "tall",
+          "label": {
+            "da": "Høj",
+            "de": "Hoch",
+            "en": "Tall",
+            "es": "Alta",
+            "fi": "Pitkä",
+            "fr": "Grand",
+            "hi": "लंबा",
+            "it": "Alta",
+            "ja": "高い",
+            "ko": "김",
+            "ms": "Tinggi",
+            "nb": "Høy",
+            "nl": "Lang",
+            "pt-BR": "Alta",
+            "pt-PT": "Alta",
+            "sv": "Lång",
+            "th": "สูง",
+            "zh-CN": "高",
+            "zh-TW": "較高"
+          }
+        }
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image_block",
+      "name": {
+        "da": "Billede",
+        "de": "Foto",
+        "en": "Image",
+        "es": "Imagen",
+        "fi": "Kuva",
+        "fr": "Image",
+        "hi": "इमेज",
+        "it": "Immagine",
+        "ja": "画像",
+        "ko": "이미지",
+        "ms": "Imej",
+        "nb": "Bilde",
+        "nl": "Afbeelding",
+        "pt-BR": "Imagem",
+        "pt-PT": "Imagem",
+        "sv": "Bild",
+        "th": "รูปภาพ",
+        "zh-CN": "图片",
+        "zh-TW": "圖片"
+      },
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": {
+            "da": "Billede",
+            "de": "Foto",
+            "en": "Image",
+            "es": "Imagen",
+            "fi": "Kuva",
+            "fr": "Image",
+            "hi": "इमेज",
+            "it": "Immagine",
+            "ja": "画像",
+            "ko": "이미지",
+            "ms": "Imej",
+            "nb": "Bilde",
+            "nl": "Afbeelding",
+            "pt-BR": "Imagem",
+            "pt-PT": "Imagem",
+            "sv": "Bild",
+            "th": "รูปภาพ",
+            "zh-CN": "图片",
+            "zh-TW": "圖片"
+          }
+        },
+        {
+          "type": "radio",
+          "id": "image_align",
+          "label": {
+            "da": "Justering af billede",
+            "de": "Fotoausrichtung",
+            "en": "Image alignment",
+            "es": "Alineación de imagen",
+            "fi": "Kuvan tasaus",
+            "fr": "Alignement de l'image",
+            "hi": "इमेज पंक्तिबद्ध करना",
+            "it": "Allineamento immagine",
+            "ja": "画像アラインメント",
+            "ko": "이미지 정렬",
+            "ms": "Penjajaran imej",
+            "nb": "Bildejustering",
+            "nl": "Afbeelding uitlijnen",
+            "pt-BR": "Alinhamento da imagem",
+            "pt-PT": "Alinhamento da imagem",
+            "sv": "Bildjustering",
+            "th": "การจัดวางรูปภาพ",
+            "zh-CN": "图片对齐方式",
+            "zh-TW": "圖片對齊"
+          },
+          "options": [
+            {
+              "value": "top center",
+              "label": {
+                "da": "Øverst i midten",
+                "de": "Oben Mitte",
+                "en": "Top center",
+                "es": "Superior centrada",
+                "fi": "Keskellä ylhäällä",
+                "fr": "En haut au centre",
+                "hi": "शीर्ष केंद्र",
+                "it": "In alto al centro",
+                "ja": "中央上",
+                "ko": "맨 위 중간",
+                "ms": "Tengah-tengah atas",
+                "nb": "Toppsentrert",
+                "nl": "Midden boven",
+                "pt-BR": "Superior centro",
+                "pt-PT": "Superior centro",
+                "sv": "Längst upp i mitten",
+                "th": "กลางบน",
+                "zh-CN": "顶部居中",
+                "zh-TW": "中央上方"
+              }
+            },
+            {
+              "value": "center center",
+              "label": {
+                "da": "Centreret",
+                "de": "Mitte",
+                "en": "Center",
+                "es": "Centrar",
+                "fi": "Keskitetty",
+                "fr": "Centre",
+                "hi": "केंद्र",
+                "it": "Al centro",
+                "ja": "中央",
+                "ko": "센터",
+                "ms": "Tengah",
+                "nb": "Sentrer",
+                "nl": "Midden",
+                "pt-BR": "Centro",
+                "pt-PT": "Centro",
+                "sv": "Centrera",
+                "th": "ตรงกลาง",
+                "zh-CN": "居中",
+                "zh-TW": "置中"
+              }
+            },
+            {
+              "value": "bottom center",
+              "label": {
+                "da": "Nederst i midten",
+                "de": "Unten mittig",
+                "en": "Bottom center",
+                "es": "Inferior centrada",
+                "fi": "Keskellä alhaalla",
+                "fr": "En bas au centre",
+                "hi": "निचला केंद्र",
+                "it": "In basso al centro",
+                "ja": "中央下",
+                "ko": "맨아래 중간",
+                "ms": "Tengah bawah",
+                "nb": "Bunnsentrert",
+                "nl": "Midden onder",
+                "pt-BR": "Inferior centro",
+                "pt-PT": "Inferior centro",
+                "sv": "Längst ner i mitten",
+                "th": "กลางล่าง",
+                "zh-CN": "底部居中",
+                "zh-TW": "中央下方"
+              }
+            }
+          ],
+          "default": "top center"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": {
+        "da": "Galleri",
+        "de": "Galerie",
+        "en": "Gallery",
+        "es": "Galería",
+        "fi": "Galleria",
+        "fr": "Galerie",
+        "hi": "गैलरी",
+        "it": "Galleria",
+        "ja": "ギャラリー",
+        "ko": "갤러리",
+        "ms": "Galeri",
+        "nb": "Galleri",
+        "nl": "Galerie",
+        "pt-BR": "Galeria",
+        "pt-PT": "Galeria",
+        "sv": "Galleri",
+        "th": "แกลเลอรี",
+        "zh-CN": "图库",
+        "zh-TW": "圖庫"
+      },
+      "category": {
+        "da": "Billede",
+        "de": "Foto",
+        "en": "Image",
+        "es": "Imagen",
+        "fi": "Kuva",
+        "fr": "Image",
+        "hi": "इमेज",
+        "it": "Immagine",
+        "ja": "画像",
+        "ko": "이미지",
+        "ms": "Imej",
+        "nb": "Bilde",
+        "nl": "Afbeelding",
+        "pt-BR": "Imagem",
+        "pt-PT": "Imagem",
+        "sv": "Bild",
+        "th": "รูปภาพ",
+        "zh-CN": "图片",
+        "zh-TW": "圖片"
+      },
+      "blocks": [
+        {
+          "type": "image_block"
+        },
+        {
+          "type": "image_block"
+        },
+        {
+          "type": "image_block"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+
+
+<div class="page-width">
+  <div class="flex column-flex">
+    {% for block in section.blocks %}
+      <div class="flex__item text-center" {{ block.shopify_attributes }}>
+        {% if block.settings.image != blank %}
+          <noscript>
+            <div class="column-flex__image column-flex__image--{{ section.settings.gallery_height }}" style="background-image: url({{ block.settings.image | img_url: '600x' }}); background-position: {{ block.settings.image_align }};"></div>
+          </noscript>
+          <div class="column-flex__image column-flex__image--{{ section.settings.gallery_height }} lazyload"
+            style="background-position: {{ block.settings.image_align }};background-image: url('{{ block.settings.image | img_url: '300x300' }});"
+            data-bgset="{% include 'bgset', image: block.settings.image %}"
+            data-sizes="auto"
+            data-parent-fit="cover">
+          </div>
+        {% else %}
+          <div class="column-flex__image">
+            <div class="placeholder-background">
+              {{ 'collection-1' | placeholder_svg_tag: 'placeholder-svg' }}
+            </div>
+          </div>
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
+
+  {% if section.blocks.size == 0 %}
+    {% include 'no-blocks' %}
+  {% endif %}
+</div>
+
+<div id='product-component-1590252997067'></div>
+<script type="text/javascript">
+/*<![CDATA[*/
+(function () {
+  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+  if (window.ShopifyBuy) {
+    if (window.ShopifyBuy.UI) {
+      ShopifyBuyInit();
+    } else {
+      loadScript();
+    }
+  } else {
+    loadScript();
+  }
+  function loadScript() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = scriptURL;
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+    script.onload = ShopifyBuyInit;
+  }
+  function ShopifyBuyInit() {
+    var client = ShopifyBuy.buildClient({
+      domain: 'luke-outdoors-supply-llc.myshopify.com',
+      storefrontAccessToken: 'f64e3153d7552d3db9e931b8a365f397',
+    });
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('product', {
+        id: '4492209717345',
+        node: document.getElementById('product-component-1590252997067'),
+        moneyFormat: '%24%7B%7Bamount%7D%7D',
+        options: {
+  "product": {
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "calc(25% - 20px)",
+          "margin-left": "20px",
+          "margin-bottom": "50px"
+        }
+      },
+      "title": {
+        "font-family": "Raleway, sans-serif",
+        "font-weight": "normal",
+        "color": "#42cf51"
+      },
+      "button": {
+        "font-family": "Raleway, sans-serif",
+        "font-size": "17px",
+        "padding-top": "16.5px",
+        "padding-bottom": "16.5px",
+        "color": "#151414",
+        ":hover": {
+          "color": "#151414",
+          "background-color": "#72a756"
+        },
+        "background-color": "#7fba60",
+        ":focus": {
+          "background-color": "#72a756"
+        },
+        "border-radius": "16px"
+      },
+      "quantityInput": {
+        "font-size": "17px",
+        "padding-top": "16.5px",
+        "padding-bottom": "16.5px"
+      },
+      "price": {
+        "font-family": "Raleway, sans-serif",
+        "font-weight": "bold"
+      },
+      "compareAt": {
+        "font-family": "Raleway, sans-serif",
+        "font-weight": "bold"
+      },
+      "unitPrice": {
+        "font-family": "Raleway, sans-serif",
+        "font-weight": "bold"
+      }
+    },
+    "text": {
+      "button": "Add to cart"
+    },
+    "googleFonts": [
+      "Raleway"
+    ]
+  },
+  "productSet": {
+    "styles": {
+      "products": {
+        "@media (min-width: 601px)": {
+          "margin-left": "-20px"
+        }
+      }
+    }
+  },
+  "modalProduct": {
+    "contents": {
+      "img": false,
+      "imgWithCarousel": true,
+      "button": false,
+      "buttonWithQuantity": true
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0px",
+          "margin-bottom": "0px"
+        }
+      },
+      "button": {
+        "font-family": "Raleway, sans-serif",
+        "font-size": "17px",
+        "padding-top": "16.5px",
+        "padding-bottom": "16.5px",
+        "color": "#151414",
+        ":hover": {
+          "color": "#151414",
+          "background-color": "#72a756"
+        },
+        "background-color": "#7fba60",
+        ":focus": {
+          "background-color": "#72a756"
+        },
+        "border-radius": "16px"
+      },
+      "quantityInput": {
+        "font-size": "17px",
+        "padding-top": "16.5px",
+        "padding-bottom": "16.5px"
+      }
+    },
+    "googleFonts": [
+      "Raleway"
+    ],
+    "text": {
+      "button": "Add to cart"
+    }
+  },
+  "cart": {
+    "styles": {
+      "button": {
+        "font-family": "Raleway, sans-serif",
+        "font-size": "17px",
+        "padding-top": "16.5px",
+        "padding-bottom": "16.5px",
+        "color": "#151414",
+        ":hover": {
+          "color": "#151414",
+          "background-color": "#72a756"
+        },
+        "background-color": "#7fba60",
+        ":focus": {
+          "background-color": "#72a756"
+        },
+        "border-radius": "16px"
+      }
+    },
+    "text": {
+      "total": "Subtotal",
+      "button": "Checkout"
+    },
+    "googleFonts": [
+      "Raleway"
+    ]
+  },
+  "toggle": {
+    "styles": {
+      "toggle": {
+        "font-family": "Raleway, sans-serif",
+        "background-color": "#7fba60",
+        ":hover": {
+          "background-color": "#72a756"
+        },
+        ":focus": {
+          "background-color": "#72a756"
+        }
+      },
+      "count": {
+        "font-size": "17px",
+        "color": "#151414",
+        ":hover": {
+          "color": "#151414"
+        }
+      },
+      "iconPath": {
+        "fill": "#151414"
+      }
+    },
+    "googleFonts": [
+      "Raleway"
+    ]
+  }
+},
+      });
+    });
+  }
+})();
+/*]]>*/
+</script>
+<div id='product-component-1590252868308'></div>
+<script type="text/javascript">
+/*<![CDATA[*/
+(function () {
+  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+  if (window.ShopifyBuy) {
+    if (window.ShopifyBuy.UI) {
+      ShopifyBuyInit();
+    } else {
+      loadScript();
+    }
+  } else {
+    loadScript();
+  }
+  function loadScript() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = scriptURL;
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+    script.onload = ShopifyBuyInit;
+  }
+  function ShopifyBuyInit() {
+    var client = ShopifyBuy.buildClient({
+      domain: 'luke-outdoors-supply-llc.myshopify.com',
+      storefrontAccessToken: 'f64e3153d7552d3db9e931b8a365f397',
+    });
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('product', {
+        id: '4500311670881',
+        node: document.getElementById('product-component-1590252868308'),
+        moneyFormat: '%24%7B%7Bamount%7D%7D',
+        options: {
+  "product": {
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "calc(25% - 20px)",
+          "margin-left": "20px",
+          "margin-bottom": "50px"
+        }
+      },
+      "title": {
+        "font-family": "Raleway, sans-serif",
+        "font-weight": "normal",
+        "color": "#42cf51"
+      },
+      "button": {
+        "font-family": "Raleway, sans-serif",
+        "font-size": "17px",
+        "padding-top": "16.5px",
+        "padding-bottom": "16.5px",
+        ":hover": {
+          "background-color": "#72a756"
+        },
+        "background-color": "#7fba60",
+        ":focus": {
+          "background-color": "#72a756"
+        },
+        "border-radius": "16px"
+      },
+      "quantityInput": {
+        "font-size": "17px",
+        "padding-top": "16.5px",
+        "padding-bottom": "16.5px"
+      },
+      "price": {
+        "font-family": "Raleway, sans-serif",
+        "font-weight": "bold"
+      },
+      "compareAt": {
+        "font-family": "Raleway, sans-serif",
+        "font-weight": "bold"
+      },
+      "unitPrice": {
+        "font-family": "Raleway, sans-serif",
+        "font-weight": "bold"
+      }
+    },
+    "text": {
+      "button": "Add to cart"
+    },
+    "googleFonts": [
+      "Raleway"
+    ]
+  },
+  "productSet": {
+    "styles": {
+      "products": {
+        "@media (min-width: 601px)": {
+          "margin-left": "-20px"
+        }
+      }
+    }
+  },
+  "modalProduct": {
+    "contents": {
+      "img": false,
+      "imgWithCarousel": true,
+      "button": false,
+      "buttonWithQuantity": true
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0px",
+          "margin-bottom": "0px"
+        }
+      },
+      "button": {
+        "font-family": "Raleway, sans-serif",
+        "font-size": "17px",
+        "padding-top": "16.5px",
+        "padding-bottom": "16.5px",
+        ":hover": {
+          "background-color": "#72a756"
+        },
+        "background-color": "#7fba60",
+        ":focus": {
+          "background-color": "#72a756"
+        },
+        "border-radius": "16px"
+      },
+      "quantityInput": {
+        "font-size": "17px",
+        "padding-top": "16.5px",
+        "padding-bottom": "16.5px"
+      }
+    },
+    "googleFonts": [
+      "Raleway"
+    ],
+    "text": {
+      "button": "Add to cart"
+    }
+  },
+  "cart": {
+    "styles": {
+      "button": {
+        "font-family": "Raleway, sans-serif",
+        "font-size": "17px",
+        "padding-top": "16.5px",
+        "padding-bottom": "16.5px",
+        ":hover": {
+          "background-color": "#72a756"
+        },
+        "background-color": "#7fba60",
+        ":focus": {
+          "background-color": "#72a756"
+        },
+        "border-radius": "16px"
+      }
+    },
+    "text": {
+      "total": "Subtotal",
+      "button": "Checkout"
+    },
+    "googleFonts": [
+      "Raleway"
+    ]
+  },
+  "toggle": {
+    "styles": {
+      "toggle": {
+        "font-family": "Raleway, sans-serif",
+        "background-color": "#7fba60",
+        ":hover": {
+          "background-color": "#72a756"
+        },
+        ":focus": {
+          "background-color": "#72a756"
+        }
+      },
+      "count": {
+        "font-size": "17px"
+      }
+    },
+    "googleFonts": [
+      "Raleway"
+    ]
+  }
+},
+      });
+    });
+  }
+})();
+/*]]>*/
+</script>
+
+<div id='collection-component-1588874324213'></div>
+<script type="text/javascript">
+/*<![CDATA[*/
+(function () {
+  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+  if (window.ShopifyBuy) {
+    if (window.ShopifyBuy.UI) {
+      ShopifyBuyInit();
+    } else {
+      loadScript();
+    }
+  } else {
+    loadScript();
+  }
+  function loadScript() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = scriptURL;
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+    script.onload = ShopifyBuyInit;
+  }
+  function ShopifyBuyInit() {
+    var client = ShopifyBuy.buildClient({
+      domain: 'luke-outdoors-supply-llc.myshopify.com',
+      storefrontAccessToken: 'f64e3153d7552d3db9e931b8a365f397',
+    });
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('collection', {
+        id: '150474195041',
+        node: document.getElementById('collection-component-1588874324213'),
+        moneyFormat: '%24%7B%7Bamount%7D%7D',
+        options: {
+  "product": {
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "calc(25% - 20px)",
+          "margin-left": "20px",
+          "margin-bottom": "50px",
+          "width": "calc(25% - 20px)"
+        },
+        "img": {
+          "height": "calc(100% - 15px)",
+          "position": "absolute",
+          "left": "0",
+          "right": "0",
+          "top": "0"
+        },
+        "imgWrapper": {
+          "padding-top": "calc(75% + 15px)",
+          "position": "relative",
+          "height": "0"
+        }
+      },
+      "title": {
+        "font-family": "Raleway, sans-serif",
+        "font-weight": "normal",
+        "color": "#42cf51"
+      },
+      "button": {
+        "font-family": "Raleway, sans-serif",
+        "font-size": "16px",
+        "padding-top": "16px",
+        "padding-bottom": "16px",
+        ":hover": {
+          "background-color": "#72a756"
+        },
+        "background-color": "#7fba60",
+        ":focus": {
+          "background-color": "#72a756"
+        },
+        "border-radius": "16px"
+      },
+      "quantityInput": {
+        "font-size": "16px",
+        "padding-top": "16px",
+        "padding-bottom": "16px"
+      },
+      "price": {
+        "font-family": "Raleway, sans-serif",
+        "font-weight": "bold",
+        "font-size": "16px"
+      },
+      "compareAt": {
+        "font-family": "Raleway, sans-serif",
+        "font-weight": "bold",
+        "font-size": "13.6px"
+      },
+      "unitPrice": {
+        "font-family": "Raleway, sans-serif",
+        "font-weight": "bold",
+        "font-size": "13.6px"
+      }
+    },
+    "buttonDestination": "modal",
+    "contents": {
+      "options": false
+    },
+    "text": {
+      "button": "View product"
+    },
+    "googleFonts": [
+      "Raleway"
+    ]
+  },
+  "productSet": {
+    "styles": {
+      "products": {
+        "@media (min-width: 601px)": {
+          "margin-left": "-20px"
+        }
+      }
+    }
+  },
+  "modalProduct": {
+    "contents": {
+      "img": false,
+      "imgWithCarousel": true,
+      "button": false,
+      "buttonWithQuantity": true
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0px",
+          "margin-bottom": "0px"
+        }
+      },
+      "button": {
+        "font-family": "Raleway, sans-serif",
+        "font-size": "16px",
+        "padding-top": "16px",
+        "padding-bottom": "16px",
+        ":hover": {
+          "background-color": "#72a756"
+        },
+        "background-color": "#7fba60",
+        ":focus": {
+          "background-color": "#72a756"
+        },
+        "border-radius": "16px"
+      },
+      "quantityInput": {
+        "font-size": "16px",
+        "padding-top": "16px",
+        "padding-bottom": "16px"
+      }
+    },
+    "googleFonts": [
+      "Raleway"
+    ],
+    "text": {
+      "button": "Add to cart"
+    }
+  },
+  "cart": {
+    "styles": {
+      "button": {
+        "font-family": "Raleway, sans-serif",
+        "font-size": "16px",
+        "padding-top": "16px",
+        "padding-bottom": "16px",
+        ":hover": {
+          "background-color": "#72a756"
+        },
+        "background-color": "#7fba60",
+        ":focus": {
+          "background-color": "#72a756"
+        },
+        "border-radius": "16px"
+      }
+    },
+    "text": {
+      "total": "Subtotal",
+      "button": "Checkout"
+    },
+    "googleFonts": [
+      "Raleway"
+    ]
+  },
+  "toggle": {
+    "styles": {
+      "toggle": {
+        "font-family": "Raleway, sans-serif",
+        "background-color": "#7fba60",
+        ":hover": {
+          "background-color": "#72a756"
+        },
+        ":focus": {
+          "background-color": "#72a756"
+        }
+      },
+      "count": {
+        "font-size": "16px"
+      }
+    },
+    "googleFonts": [
+      "Raleway"
+    ]
+  }
+},
+      });
+    });
+  }
+})();
+/*]]>*/
+</script>
+https://lukeoutdoors.com/collections/outdoors-bulk-supply
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5CV7NS83P0"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-5CV7NS83P0');
+</script>

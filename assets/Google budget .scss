@@ -1,0 +1,24 @@
+{
+      "kind": "adexchangebuyer#budget" ,
+  "id" : string,
+  "accountId" : long,
+  "billingId" : long,
+  "budgetamount" : long,
+  "currencyCode" : string
+}
+{
+  "error": {
+    "code": 401,
+    "message": "Request is missing required authentication credential. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.",
+    "errors": [
+      {
+        "message": "Login Required.",
+        "domain": "global",
+        "reason": "required",
+        "location": "Authorization",
+        "locationType": "header"
+      }
+    ],
+    "status": "UNAUTHENTICATED"
+  }
+}

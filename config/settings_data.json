@@ -1,0 +1,452 @@
+{
+  "current": {
+    "color_header_bg": "#666666",
+    "color_header_links": "#fff",
+    "color_body_bg": "#666666",
+    "color_content_bg": "#fff",
+    "color_body_headings": "#030303",
+    "color_body_text": "#666",
+    "color_button_bg": "#f3fdff",
+    "color_button_text": "#0a0e1f",
+    "color_footer_bg": "#666666",
+    "color_footer_text": "#030303",
+    "color_hero_text": "#030303",
+    "color_hero_bg": "#666666",
+    "type_accent_family": "sackers_square_gothic_n4",
+    "type_accent_spacing": true,
+    "type_accent_transform": true,
+    "type_base_family": "wola_n4",
+    "type_base_size": "14px",
+    "type_nav_size": "14px",
+    "type_nav_spacing": false,
+    "type_nav_transform": true,
+    "product_images_padding": true,
+    "product_vendor_enable": true,
+    "share_image": "shopify:\/\/shop_images\/Luke_outdoors_supply_png.png",
+    "social_facebook_link": "https:\/\/www.facebook.com\/LukeoutdoorssupplyLLC",
+    "social_twitter_link": "https:\/\/twitter.com\/iamluke985",
+    "social_pinterest_link": "Https:\/\/www.pinterest.com\/lilluke304",
+    "social_instagram_link": "https:\/\/www.instagram.com\/lukeoutdoorssupplyllc",
+    "social_tumblr_link": "",
+    "social_snapchat_link": "https:\/\/www.snapchat.com\/add\/lilluke304",
+    "social_youtube_link": "https:\/\/www.youtube.com\/channel\/UCUaLG1DByagrES0kpBpvlzA\/featured?disable_polymer=1",
+    "social_vimeo_link": "",
+    "share_facebook": true,
+    "share_twitter": true,
+    "share_pinterest": true,
+    "favicon": "shopify:\/\/shop_images\/Luke_outdoors_supply_png_black_and_white.png",
+    "checkout_header_image": "shopify:\/\/shop_images\/Luke_outdoors_supply_png_black_and_white.png",
+    "checkout_logo_image": "shopify:\/\/shop_images\/Luke_outdoors_supply_png_black_and_white.png",
+    "checkout_logo_position": "left",
+    "checkout_logo_size": "medium",
+    "checkout_body_background_image": "shopify:\/\/shop_images\/EBB4EA06-C241-428C-ADFF-9CBE2941854F.jpeg",
+    "checkout_body_background_color": "#fff",
+    "checkout_input_background_color_mode": "white",
+    "checkout_sidebar_background_image": "shopify:\/\/shop_images\/1425C871-5420-431F-9365-A9459F66A10D.jpeg",
+    "checkout_sidebar_background_color": "#fafafa",
+    "checkout_heading_font": "Playball",
+    "checkout_body_font": "Roboto",
+    "checkout_accent_color": "#f5f5f5",
+    "checkout_button_color": "#006eff",
+    "checkout_error_color": "#e32c2b",
+    "checkout_banner_background_color": "#fff",
+    "checkout_call_to_action_color": "#006eff",
+    "checkout_use_header_image": false,
+    "color_newsletter_input": "#1a1a1a",
+    "sections": {
+      "slideshow": {
+        "type": "slideshow",
+        "blocks": {
+          "1582031196245": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/45C3C3FD-7135-461A-92CE-0816EFC440D4.png",
+              "image_position": "center center",
+              "title": "American Flag 3x5",
+              "button_label": "View all products",
+              "button_link": "shopify:\/\/products\/american-flag-3ft-x-5ft-sewn-cotton-online-stores-brand-outdoor-flags-garden-outdoor"
+            }
+          },
+          "1580600567127": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/camo.jpg",
+              "image_position": "center center",
+              "title": "Luke outdoors Camo Hat",
+              "button_label": "View all products",
+              "button_link": "https:\/\/www.lukeoutdoors.com\/products\/luke-outdoors-camo-snapback-hat"
+            }
+          }
+        },
+        "block_order": [
+          "1580600567127",
+          "1582031196245"
+        ],
+        "settings": {
+          "hero_home_height": "small",
+          "hero_home_auto": true,
+          "hero_home_auto_speed": 7
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "social": {
+            "type": "social",
+            "settings": {
+              "title": "luke outdoors & supply LLC",
+              "align": "left"
+            }
+          },
+          "1572419246886": {
+            "type": "text",
+            "settings": {
+              "title": "Design your own shirts..",
+              "text": "<p>🇺🇸<\/p>"
+            }
+          },
+          "1572419910791": {
+            "type": "text",
+            "settings": {
+              "title": "Bulk shipping",
+              "text": "<p>Luke outdoors &amp; supply LLC&nbsp;<strong>ships out 3-5 business days.<\/strong><\/p>"
+            }
+          },
+          "1584371539954": {
+            "type": "text",
+            "settings": {
+              "title": "Subscribe",
+              "text": ""
+            }
+          }
+        },
+        "block_order": [
+          "social",
+          "1572419246886",
+          "1572419910791",
+          "1584371539954"
+        ],
+        "settings": {
+          "show_payment_icons": true
+        }
+      },
+      "image-content": {
+        "type": "image-content",
+        "blocks": {
+          "1572989197598": {
+            "type": "image_block",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/BCDE8331-0B2F-4849-B853-FD91F7565590.jpeg"
+            }
+          },
+          "1572989278840": {
+            "type": "image_block",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/86195B38-9DFA-4CAD-9722-142308A47DB1.jpeg"
+            }
+          },
+          "1580732574023": {
+            "type": "image_block",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/bird_feeder.jpg"
+            }
+          }
+        },
+        "block_order": [
+          "1572989197598",
+          "1572989278840",
+          "1580732574023"
+        ],
+        "settings": {
+        }
+      },
+      "header": {
+        "type": "header",
+        "settings": {
+        }
+      },
+      "product-template": {
+        "type": "product-template",
+        "settings": {
+          "enable_ajax": true,
+          "stock_enable": true,
+          "enable_payment_button": true,
+          "social_sharing_products": true
+        }
+      },
+      "product-recommendations": {
+        "type": "product-recommendations",
+        "settings": {
+          "show_product_recommendations": true,
+          "heading": "You may also like"
+        }
+      },
+      "collection-filters": {
+        "type": "collection-filters",
+        "settings": {
+          "product_tags_enable": false,
+          "product_sorting_enable": false
+        }
+      },
+      "1572986405777": {
+        "type": "gallery",
+        "blocks": {
+          "1572986405777-0": {
+            "type": "image_block",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/00D5AEAD-6667-444C-A198-DE84C1EF2F6A.jpeg",
+              "image_align": "top center"
+            }
+          },
+          "1572986405777-1": {
+            "type": "image_block",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/friends-backpacking-together.jpg",
+              "image_align": "center center"
+            }
+          },
+          "1572986405777-2": {
+            "type": "image_block",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/fun-at-carnival.jpg",
+              "image_align": "bottom center"
+            }
+          }
+        },
+        "block_order": [
+          "1572986405777-0",
+          "1572986405777-1",
+          "1572986405777-2"
+        ],
+        "settings": {
+          "gallery_height": "short"
+        }
+      },
+      "cart-template": {
+        "type": "cart-template",
+        "settings": {
+          "cart_notes_enable": true
+        }
+      },
+      "1584398160842": {
+        "type": "image-content",
+        "blocks": {
+          "1584398160842-0": {
+            "type": "image_block",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Luke_outdoors_supply_png_black_and_white.png"
+            }
+          },
+          "1584398160842-1": {
+            "type": "text_block",
+            "settings": {
+              "title": "Luke outdoors & supply LLC",
+              "text": "<p>Luke outdoors &amp; supply LLC ships in 3-5 Business days and&nbsp;Amazon Prime Ships products in 1 day,&nbsp;<\/p>",
+              "align": "center"
+            }
+          }
+        },
+        "block_order": [
+          "1584398160842-0",
+          "1584398160842-1"
+        ],
+        "settings": {
+        }
+      }
+    },
+    "content_for_index": [
+      "1584398160842",
+      "image-content",
+      "1572986405777"
+    ]
+  },
+  "presets": {
+    "Snowboards": {
+      "checkout_accent_color": "#006eff",
+      "checkout_banner_background_color": "#fff",
+      "checkout_button_color": "#006eff",
+      "checkout_call_to_action_color": "#006eff",
+      "checkout_use_header_image": false,
+      "color_body_bg": "#f7f7f7",
+      "color_body_headings": "#030303",
+      "color_body_text": "#666",
+      "color_button_bg": "#006eff",
+      "color_button_text": "#fff",
+      "color_content_bg": "#fff",
+      "color_footer_bg": "#030303",
+      "color_footer_text": "#fff",
+      "color_header_bg": "#030303",
+      "color_header_links": "#fff",
+      "color_hero_bg": "#006eff",
+      "color_hero_text": "#fff",
+      "color_newsletter_input": "#1a1a1a",
+      "type_accent_family": "unica_one_n4",
+      "type_accent_spacing": true,
+      "type_accent_transform": true,
+      "type_base_family": "karla_n4",
+      "type_base_size": "16px",
+      "type_nav_size": "14px",
+      "type_nav_spacing": true,
+      "type_nav_transform": true,
+      "sections": {
+        "slideshow": {
+          "type": "slideshow",
+          "blocks": {
+            "placeholder-0": {
+              "type": "slide",
+              "settings": {
+              }
+            },
+            "placeholder-1": {
+              "type": "slide",
+              "settings": {
+              }
+            }
+          },
+          "block_order": [
+            "placeholder-0",
+            "placeholder-1"
+          ],
+          "settings": {
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "linklist": {
+              "type": "menu",
+              "settings": {
+              }
+            },
+            "social": {
+              "type": "social",
+              "settings": {
+              }
+            }
+          },
+          "block_order": [
+            "linklist",
+            "social"
+          ],
+          "settings": {
+          }
+        },
+        "featured-collections": {
+          "type": "featured-collections",
+          "blocks": {
+            "featured-collections-0": {
+              "type": "collection",
+              "settings": {
+              }
+            },
+            "featured-collections-1": {
+              "type": "collection",
+              "settings": {
+              }
+            },
+            "featured-collections-2": {
+              "type": "collection",
+              "settings": {
+              }
+            }
+          },
+          "block_order": [
+            "featured-collections-0",
+            "featured-collections-1",
+            "featured-collections-2"
+          ],
+          "settings": {
+          }
+        },
+        "featured-products": {
+          "type": "featured-products",
+          "settings": {
+            "collection": "frontpage"
+          }
+        },
+        "image-content": {
+          "type": "image-content",
+          "blocks": {
+            "image-content-0": {
+              "type": "image_block",
+              "settings": {
+              }
+            },
+            "image-content-1": {
+              "type": "text_block",
+              "settings": {
+              }
+            }
+          },
+          "block_order": [
+            "image-content-0",
+            "image-content-1"
+          ],
+          "settings": {
+          }
+        }
+      },
+      "content_for_index": [
+        "featured-collections",
+        "featured-products",
+        "image-content"
+      ]
+    },
+    "Outdoors": {
+      "checkout_accent_color": "#f4743c",
+      "checkout_banner_background_color": "#fff",
+      "checkout_button_color": "#f4743c",
+      "checkout_call_to_action_color": "#f4743c",
+      "checkout_use_header_image": false,
+      "color_body_bg": "#f7f7f7",
+      "color_body_headings": "#1a1a1a",
+      "color_body_text": "#666",
+      "color_button_bg": "#c04f1d",
+      "color_button_text": "#fff",
+      "color_content_bg": "#ffffff",
+      "color_footer_bg": "#213236",
+      "color_footer_text": "#fff",
+      "color_header_bg": "#213236",
+      "color_header_links": "#ffffff",
+      "color_hero_bg": "#f4743c",
+      "color_hero_text": "#fff",
+      "color_newsletter_input": "#425154",
+      "type_accent_family": "lora_n7",
+      "type_accent_spacing": false,
+      "type_accent_transform": false,
+      "type_base_family": "roboto_n4",
+      "type_base_size": "14px",
+      "type_nav_size": "15px",
+      "type_nav_spacing": false,
+      "type_nav_transform": false
+    },
+    "Boxing": {
+      "checkout_accent_color": "#d8232f",
+      "checkout_banner_background_color": "#fff",
+      "checkout_button_color": "#d8232f",
+      "checkout_call_to_action_color": "#d8232f",
+      "checkout_use_header_image": false,
+      "color_body_bg": "#f0f0f0",
+      "color_body_headings": "#222222",
+      "color_body_text": "#666",
+      "color_button_bg": "#d8232f",
+      "color_button_text": "#fff",
+      "color_content_bg": "#ffffff",
+      "color_footer_bg": "#222222",
+      "color_footer_text": "#ffffff",
+      "color_header_bg": "#222222",
+      "color_header_links": "#ffffff",
+      "color_hero_bg": "#d8232f",
+      "color_hero_text": "#fff",
+      "color_newsletter_input": "#303030",
+      "type_accent_family": "open_sans_condensed_n7",
+      "type_accent_spacing": false,
+      "type_accent_transform": true,
+      "type_base_family": "source_sans_pro_n4",
+      "type_base_size": "17px",
+      "type_nav_size": "14px",
+      "type_nav_spacing": true,
+      "type_nav_transform": true
+    }
+  }
+}
